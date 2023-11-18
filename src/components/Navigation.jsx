@@ -2,12 +2,12 @@ import React from "react";
 
 const Navigation = () => {
   return (
-    <nav className="bg-slate-400 w-full fixed flex justify-between">
+    <nav className="bg-slate-100 w-full fixed flex justify-between top-0">
       <div className="logo">
         <img
           src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png"
           alt="logo of instagram"
-          className="w-24 mt-2 ml-2 lg:w-32"
+          className="w-24 mt-2 ml-4 lg:w-32"
         />
       </div>
 

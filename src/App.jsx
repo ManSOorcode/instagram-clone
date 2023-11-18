@@ -1,99 +1,21 @@
 // import "./App.css";
 
 import Navigation from "./components/Navigation";
+import Post from "./components/Post";
 
 function App() {
   return (
-    <>
+    <div className="relative">
       {/**Nav */}
       <Navigation />
       {/*post */}
-      {/*menu */}
-
-      <div>
-        hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
-        libero sit maxime asperiores, laudantium eius omnis, deleniti est rerum
-        optio enim mollitia aut qui quaerat. hello Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat. hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat. hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat.hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.hello Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quia, libero sit maxime asperiores, laudantium eius omnis, deleniti est
-        rerum optio enim mollitia aut qui quaerat. hello Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Quia, libero sit maxime asperiores,
-        laudantium eius omnis, deleniti est rerum optio enim mollitia aut qui
-        quaerat.
+      <div className="mt-20 flex items-center flex-col ">
+        <Post />
+        <Post />
+        <Post />
       </div>
-    </>
+      {/*menu */}
+    </div>
   );
 }
 
