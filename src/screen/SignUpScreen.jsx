@@ -2,13 +2,55 @@
 import { useState } from "react";
 import logo from "../assets/Logo-Instagram.png";
 
-import { Grid, Card, TextField, Button, Typography, Box } from "@mui/material";
+import { Grid, Card, TextField, Button, Typography } from "@mui/material";
 
 const SignUpScreen = () => {
-  const [isModal, setIsModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
-  const handleToggel = () => {
-    setIsModal((prev) => !prev);
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+
+    console.log(id, value);
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleSignUp = () => {
+    // Perform form validation
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      newErrors.email = "Invalid email address";
+    }
+
+    if (formData.password.length < 6) {
+      newErrors.password = "Password must be at least 6 characters";
+    }
+
+    // Update error state
+    setErrors(newErrors);
+
+    // If there are no errors, you can proceed with signup
+    if (Object.keys(newErrors).length === 0) {
+      console.log("Form submitted:", formData);
+    }
   };
 
   const formContainerStyle = {
@@ -52,34 +94,45 @@ const SignUpScreen = () => {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
-                id="outlined-error-helper-text-1"
+                id="name"
                 label="Name"
                 size="small"
                 required
                 fullWidth
                 style={textFieldStyle}
+                value={formData.name}
+                onChange={(e) => handleChange(e)}
+                error={!!errors.name}
+                helperText={errors.name || ""}
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
-                id="outlined-error-helper-text-2"
+                id="email"
                 label="Email"
-                type="password"
                 size="small"
                 required
                 fullWidth
                 style={textFieldStyle}
+                value={formData.email}
+                onChange={(e) => handleChange(e)}
+                error={!!errors.email}
+                helperText={errors.email || ""}
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
-                id="outlined-error-helper-text-3"
+                id="password"
                 label="Password"
                 autoComplete="current-password"
                 size="small"
                 required
                 fullWidth
                 style={textFieldStyle}
+                value={formData.password}
+                onChange={(e) => handleChange(e)}
+                error={!!errors.password}
+                helperText={errors.password || ""}
               />
             </Grid>
             <Grid item xs={12}>
@@ -87,7 +140,7 @@ const SignUpScreen = () => {
                 variant="contained"
                 fullWidth
                 style={buttonStyle}
-                onClick={() => console.log("Sign In clicked")}
+                onClick={handleSignUp}
               >
                 Sign up
               </Button>
@@ -106,7 +159,6 @@ const SignUpScreen = () => {
         >
           Have an account?
           <Button
-            // variant="contained"
             sx={{ textTransform: "none", fontSize: "1.2rem", padding: "0 8px" }}
             onClick={() => console.log("Sign In clicked")}
           >
